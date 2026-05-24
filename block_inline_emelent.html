@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>In line vs Block Elements</title>
+  </head>
+  <body>
+    <main>
+      <h1>Block vs Inline Elements</h1>
+      <p>
+        In HTML, elements are categorized as either block-level or inline.
+        Block-level elements, such as <code>&lt;div&gt;</code>,
+        <code>&lt;section&gt;</code>, and <code>&lt;article&gt;</code>, start on
+        a new line and take up the full width available. They are used to
+        structure the main sections of a webpage.
+      </p>
+
+      <p>
+        On the other hand, inline elements, such as <code>&lt;span&gt;</code>,
+        <code>&lt;a&gt;</code>, and <code>&lt;strong&gt;</code>, do not start on
+        a new line and only take up as much width as necessary. They are
+        typically used for styling or linking specific parts of text within
+        block-level elements.
+      </p>
+
+      <p>
+        Understanding the difference between block and inline elements is
+        crucial for effective HTML structuring and styling. Block-level elements
+        help organize content into distinct sections, while inline elements
+        allow for more granular control over the presentation of text and other
+        content within those sections.
+      </p>
+    </main>
+
+    <h1>heading</h1>
+    <p>This is an inline element.</p>
+    <div>This is a block element.</div>
+    <p>
+      This is another inline element.
+      <span>
+        <i>This is an <u>inline</u> <b>element</b>.</i></span
+      >
+    </p>
+
+    <a href="https://www.example.com">This is an inline link element.</a
+    ><b>hello</b><small>small text</small
+    ><audio controls>
+      <source src="abc.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+
+    <video controls>
+      <source src="v1.mp4" type="video/mp4" />
+      Your browser does not support the video element.
+    </video>
+
+    <h1>Another Heading</h1>
+
+    <ul>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </ul>
+    <ol>
+      <li>First item</li>
+      <li>Second item</li>
+      <li>Third item</li>
+    </ol>
+
+    <dl>
+      <dt>Term 1</dt>
+      <dd>Description for term 1.</dd>
+      <dt>Term 2</dt>
+      <dd>Description for term 2.</dd>
+      <dt>Term 3</dt>
+      <dd>Description for term 3.</dd>
+    </dl>
+
+    <div>
+      <blockquote>
+        This is a blockquote element, which is used to indicate that the
+        enclosed text is an extended quotation. It typically renders as indented
+        text and may include a citation for the source of the quote.
+      </blockquote>
+
+      <code>
+        This is a code element, which is used to represent a fragment of
+        computer code. It typically renders in a monospace font and may be
+        styled with additional formatting to distinguish it from regular text.
+      </code>
+
+      <kbd>Ctrl + S</kbd>
+    </div>
+
+    <del>This text is deleted.</del>
+
+    <ins>This text is inserted.</ins>
+
+    <details>
+      <summary>Click to expand</summary>
+      <p>
+        This is additional content that is hidden by default and can be revealed
+        when the user clicks on the summary. The <code>&lt;details&gt;</code>
+        element is useful for providing extra information or options without
+        cluttering the main content of the page.
+      </p>
+
+    </details>
+    <details>
+      
+      <summary>Click to expand 2</summary>
+      <p>
+        This is more additional content that is hidden by default and can be
+        revealed when the user clicks on the second summary. The
+        <code>&lt;details&gt;</code> element can be used multiple times on a
+        page to organize content in a way that allows users to choose what they
+        want to see.
+      </p>
+    </details>
+  </body>
+</html>

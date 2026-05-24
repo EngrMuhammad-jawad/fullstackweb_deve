@@ -1,0 +1,111 @@
+/* external CSS */
+
+ul {
+    list-style: none;
+    color: black;
+    text-decoration: none;
+    display: flex;
+     gap: 40px;
+
+}
+li a{
+    color: black;
+    text-decoration: none;
+}
+
+a:hover{
+    color: red;
+    text-decoration: underline;
+}
+
+
+p{
+    color: darkblue;
+    font-size: larger !important;
+}
+
+#id1{
+    background-color: rgb(201, 22, 52);
+    font-size: larger !important;
+}
+
+ .p1{
+    color: rgb(251, 248, 248) !important;
+    margin: 50px;
+    padding: 50px;
+}
+
+h1 , h2, h3{
+    color: rgb(6, 94, 22);
+}
+
+.p7{
+    color: rgb(6, 94, 22) !important;
+    font-size: 15px;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 20px;
+}
+.p2{
+    color: red !important;
+    font-size: 17px;
+    font-weight: 500;
+    font-style: oblique;
+}
+
+.p3{
+    color: #0000ff !important;
+    font-size: 2px;
+    font-weight: 600;
+    font-style: normal;
+    text-align: right !important;
+}
+.p4{
+    color: rgba(6, 94, 22, 0.8) !important;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center !important;
+        text-transform:  lowercase !important;
+}
+.p5{
+    color: rgba(255, 162, 56, 0.8) !important;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: left !important;
+text-transform: uppercase !important;
+}
+
+.p6{
+    color: rgb(75, 192, 238) !important;
+    font-size: 20px;
+    font-weight: 200;
+    text-decoration: dotted underline !important;
+    text-transform: capitalize !important;
+}
+
+.container1{
+    background-color: rgb(201, 22, 52);
+    color: white;
+    padding: 20px;
+    margin: 20px;
+    border: #0000ff 5px solid;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgba(24, 240, 46, 0.5);
+}
+.container2{
+    background-image: url(../../img.jpg);
+    height: 700px;
+    background-size: cover;
+     background-position: center;
+}
+
+.container3{
+    background-color: rgb(231, 226, 227);
+    color: rgb(28, 20, 20);
+    padding: 20px;
+    margin: 20px;
+        border-style: dashed;
+    border-color: rgb(6, 94, 22);
+    border-width: 5px;
+    border-radius: 10px;
+}

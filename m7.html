@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS</title>
+    <style>
+      :root {
+        --primary-color: #1b54da;
+        --secondary-color: #333;
+        --success-color: #28a745;
+        --error-color: #dc3545;
+        --nav-bg-color: #090e1b;
+        --radius: 10px;
+        --gap: 20px;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        color: var(--secondary-color);
+        margin: 0;
+        padding: 20px;
+      }
+      nav ul {
+        list-style: none;
+        display: flex;
+        /* flex-direction: row-reverse; */
+        gap: var(--gap);
+      }
+      li {
+        background-color: var(--nav-bg-color);
+        padding: 10px 15px;
+        border-radius: var(--radius);
+      }
+      li a {
+        text-decoration: none;
+        color: #fff;
+      }
+      li a:hover{
+        color: var(--success-color);
+        /* background-color: var(--error-color); */
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>

@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hero Section</title>
+
+    <style>
+      body {
+        margin: 0;
+        font-family: "Optima", "Gill Sans", "Candara", sans-serif;
+        color: #fff;
+      }
+
+      .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        background-color: #090e1b;
+      }
+
+      .nav-links a {
+        color: #fff;
+        text-decoration: none;
+        margin-right: 20px;
+      }
+
+      .nav-links a:hover {
+        color: #28a745;
+      }
+      a {
+        text-decoration: none;
+        color: #fff;
+      }
+
+      .hero {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+        height: 91.5vh;
+        background: url("assets/img/OIP.webp") no-repeat center center/cover;
+        text-align: center;
+      }
+      .hero p {
+        max-width: 600px;
+        margin: 0px;
+      }
+      .btn {
+        padding: 10px 20px;
+        border: 2px solid #fff;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+      }
+      .hero-action{
+        display: flex;
+        gap: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="nav">
+      <div>Tutorigo</div>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#home">Home</a>
+        <a href="#find">Find a Tutor</a>
+        <a href="#students">Students</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <a href="#login">Sign In</a>
+    </header>
+    <main>
+      <section class="hero">
+        <h1>Find Your Perfect Tutor</h1>
+        <p>
+          Whether studying for a big exam, learning a new subject, or building
+          real-world skills, we connect you with tutors who meet your needs.
+        </p>
+
+        <div class="hero-action">
+          <a class="btn primary" href="#find">Find a Tutor</a>
+          <a class="btn" href="#students">Become a Tutor</a>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Layout</title>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+        margin: 0;
+        padding: 20px;
+      }
+      .grid-container {
+        display: grid;
+        /* grid-template-columns: repeat(3, 1fr); */
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+      }
+      .grid-item {
+        border: 2px solid #ab0909;
+      }
+
+      @media (min-width: 400px) {
+        .grid-container {
+          grid-template-columns: 1fr;
+        }       
+      @media (min-width: 768px) {
+        .grid-container {
+          grid-template-columns: repeat(2, 1fr);
+        }       
+      @media (min-width: 1024px) {
+        .grid-container {
+          grid-template-columns: repeat(3, 1fr);
+        }       
+        
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section>
+        <h1>Grid Layout</h1>
+        <p>
+          CSS Grid Layout is a powerful layout system available in CSS. It
+          allows you to create complex and responsive grid-based layouts with
+          ease. With CSS Grid, you can define rows and columns, and place items
+          within those grid areas. It provides a more efficient way to design
+          web pages compared to traditional methods like floats and flexbox.
+        </p>
+
+        <div class="grid-container">
+          <div class="grid-item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem impedit magni tempora reiciendis dicta autem, ipsa doloribus praesentium assumenda. Voluptatem unde eveniet et error quod laborum sequi perferendis quae distinctio.</div>
+          <div class="grid-item">2</div>
+          <div class="grid-item">3</div>
+          <div class="grid-item">4</div>
+          <div class="grid-item">5</div>
+          <div class="grid-item">6</div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

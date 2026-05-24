@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>nav ,img ,table ,a</title>
+
+    <style>
+      nav ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: #333;
+      }
+      nav a:hover {
+        color: #1b54da;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <a href="https://www.google.com/" target="_blank">Home</a>
+        </li>
+        <li>
+          <a href="about.html">About</a>
+        </li>
+        <li>
+          <a href="contact.html">Contact</a>
+        </li>
+        <li>
+          <a href="services.html">Services</a>
+        </li>
+      </ul>
+    </nav>
+
+    <img src="img.jpg" alt="hero banner" width="100%" />
+
+    <hr />
+
+    <h2>table section employee</h2>
+    <table border="1" width="100%" style="">
+      <!-- table content -->
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Position</th>
+          <th>status</th>
+          <th>Salary</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Ali</td>
+          <td colspan="2">Manager</td>
+          <td rowspan="3">$5000</td>
+        </tr>
+        <tr>
+          <td>jawad</td>
+          <td colspan="2">IT</td>
+          <!-- <td>$5000</td> -->
+        </tr>
+        <tr>
+          <td>khan</td>
+          <td colspan="2">management -ceo</td>
+          <!-- <td>$5000</td> -->
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

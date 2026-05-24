@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>array object and loops</title>
+  </head>
+  <body>
+    <h1 id="a">Array Object and Loops</h1>
+    <p class="ptag">
+      An array is a data structure that can hold multiple values at once. In
+      JavaScript, arrays are objects that come with built-in methods for
+      manipulating and accessing their elements. Loops, on the other hand, are
+      used to execute a block of code repeatedly until a certain condition is
+      met. The most common types of loops in JavaScript are the for loop, while
+      loop, and do-while loop. Arrays and loops often work together to allow
+      developers to iterate through the elements of an array and perform
+      operations on them efficiently.
+    </p>
+
+    <!-- <a href="#" id="btn">Click me</a> -->
+
+    <script>
+      // Your JavaScript code goes here
+
+      let myArray = [1, 2, 3, 4, 5];
+      myArray.push(6);
+
+      myArray.pop(6);
+      myArray.unshift(0);
+      myArray.shift(0);
+      myArray.splice(1, 1);
+      console.log(myArray);
+
+      let arr = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j"];
+
+      console.log(arr.indexOf("e"));
+      console.log(arr.includes("e"));
+
+      let arr1 = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j"];
+
+      for (let i = 0; i < arr1.length; i++) {
+        console.log(arr1[i]);
+      }
+
+      console.log("for of loop");
+      for (let i of arr1) {
+        console.log(i + " " + `${arr1.indexOf(i)}`);
+      }
+    </script>
+  </body>
+</html>

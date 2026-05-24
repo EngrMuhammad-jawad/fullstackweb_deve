@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS funcation and GIt</title>
+  </head>
+  <body>
+    <h1>JS funcation and GIt</h1>
+
+    <script>
+      function welcome(name) {
+        console.log("welcome to js " + name);
+      }
+
+      welcome("ali");
+      welcome("ahmed");
+      welcome("hassan");
+      welcome("hussain");
+
+      let abc = welcome("khan");
+      console.log(abc);
+
+      function add(a, b) {
+        return a + b;
+      }
+      console.log(add(10, 20));
+      console.log(add(0.134, 2443.33));
+
+      function gr(name, role = "student") {
+        console.log("welcome to js " + name + " your role is " + role);
+      }
+
+      console.log(gr("jawad", "teacher"));
+
+      const mul = (a, b) => {
+        return a * b;
+      };
+      console.log(mul(10, 20));
+
+      calculatetax = (amount) => {
+        return amount * 0.15;
+      };
+      console.log(calculatetax(100));
+      calculatetax = (amount, taxRate) => {
+        return amount + amount * taxRate;
+      };
+      console.log(calculatetax(100, 0.15));
+      // console.log(add(10, 20));
+    </script>
+  </body>
+</html>

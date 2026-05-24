@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>M12 Dom Manipulation</title>
+  </head>
+  <body>
+    <style>
+      .highlight {
+        border: 2px solid red;
+        padding: 10px;
+      }
+    </style>
+    <h1>DOM Manipulation</h1>
+    <p id="demo" class="highlight">This is a paragraph.</p>
+    <button onclick="changeText()">Change Text</button>
+
+    <script>
+      function changeText() {
+        document.getElementById("demo").innerHTML =
+          "The text has been changed!";
+      }
+
+      // Example of creating a new element and adding it to the DOM
+      const newParagraph = document.createElement("p");
+      newParagraph.innerHTML =
+        "This is a new paragraph created with JavaScript.";
+      document.body.appendChild(newParagraph);
+
+      //   change the style of the para
+      newParagraph.style.color = "red";
+      newParagraph.style.backgroundColor = "lightgray";
+      newParagraph.style.fontSize = "20px";
+
+      document.getElementById("demo").style.color = "blue";
+      document.getElementById("demo").textContent =
+        "This text has been changed using textContent. jawad";
+
+      // add class to the new paragraph
+    //   newParagraph.classList.add("highlight");
+      document.getElementById("demo").classList.remove("highlight");
+
+    //   append 
+
+    // click
+    </script>
+  </body>
+</html>
