@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <title>JD Blogs</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">JD blogs</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse"
+            id="navbarNav"
+            style="justify-content: center"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- ek screen mai hamry pass 12 columns hoty hy  -->
+
+    <!--  1st column 4 col-md-4
+
+    m=margin p=padding m-0 p-0
+    row=1 row m-0 p-0
+    column 12 you can dvide accroding to your need like 4,6,2 or 3,3,3,3 or 2,2,2,2,2,2 etc
+    2nd column 6 col-md-6 -->
+
+    <div class="row m-0 p-0">
+      <div class="col-md-4">
+        <div
+          class="row d-flex m-0 p-0 flex-column justify-content-center align-items-center bg-primary text-white"
+        >
+          <h6>row</h6>
+          <div class="col-md-6">column 1</div>
+          <div class="col-md-6">column 2</div>
+        </div>
+      </div>
+      <div class="col-md-6">2 of 3</div>
+      <div class="col-xl-2 col-lg-2 col-md-4 col-sm-12">3 of 3</div>
+    </div>
+
+    <div class="row m-0 p-0 mt-3 mb-3">
+      <div class="col-xl-2 col-lg-2 col-md-4 col-sm-12">
+        <div
+          class="row d-flex m-0 p-0 flex-column justify-content-center align-items-center bg-primary text-white"
+        >
+          <h6>row</h6>
+        </div>
+      </div>
+      <div class="col-xl-2 col-lg-2 col-md-4 col-sm-12">
+        <div
+          class="row d-flex m-0 p-0 flex-column justify-content-center align-items-center bg-warning text-white"
+        >
+          <h6>row</h6>
+        </div>
+      </div>
+      <div class="col-xl-2 col-lg-2 col-md-4 col-sm-12">
+        <div
+          class="row d-flex m-0 p-0 flex-column justify-content-center align-items-center bg-success text-white"
+        >
+          <h6>row</h6>
+        </div>
+      </div>
+      <div class="col-xl-2 col-lg-2 col-md-4 col-sm-12">
+        <div
+          class="row d-flex m-0 p-0 flex-column justify-content-center align-items-center bg-danger text-white"
+        >
+          <h6>row</h6>
+        </div>
+      </div>
+      <div class="col-xl-2 col-lg-2 col-md-4 col-sm-12">
+        <div
+          class="row d-flex m-0 p-0 flex-column justify-content-center align-items-center bg-info text-white"
+        >
+          <h6>row</h6>
+        </div>
+      </div>
+      <div class="col-xl-2 col-lg-2 col-md-4 col-sm-12">
+        <div
+          class="row d-flex m-0 p-0 flex-column justify-content-center align-items-center bg-secondary text-white"
+        >
+          <h6>row</h6>
+        </div>
+      </div>
+
+      <div class="col-md-12">
+        <div
+          class="row d-flex m-0 p-0 flex-column justify-content-center align-items-center bg-dark text-white"
+        >
+          <h6>row</h6>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label"
+              >Email address</label
+            >
+            <input
+              type="email"
+              class="form-control mb-1"
+              id="exampleFormControlInput1"
+              placeholder="name@example.com"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label"
+              >Example textarea</label
+            >
+            <textarea
+              class="form-control mb-1"
+              id="exampleFormControlTextarea1"
+              rows="3"
+            ></textarea>
+
+            <select
+              class="form-select mb-5 mt-5 w-50 p-2 px-3 py-2 mx-5 my-5 h-50 "
+              aria-label="Default select example"
+            >
+              <option selected>Open this select menu</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+
+            <div class="form-check mb-1">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="checkIndeterminateDisabled"
+                disabled
+              />
+              <label class="form-check-label" for="checkIndeterminateDisabled">
+                Disabled indeterminate checkbox
+              </label>
+            </div>
+            <div class="form-check mb-1">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="checkDisabled"
+                disabled
+              />
+              <label class="form-check-label" for="checkDisabled">
+                Disabled checkbox
+              </label>
+            </div>
+            <div class="form-check mb-5">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="checkCheckedDisabled"
+                checked
+                disabled
+              />
+              <label class="form-check-label" for="checkCheckedDisabled">
+                Disabled checked checkbox
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <main>
+      <section class="hero">
+        <div class="container">
+          <h1>Welcome to My Blog</h1>
+          <p>A place to share my thoughts and experiences.</p>
+          <a href="#" class="btn btn-primary">Learn More</a>
+        </div>
+      </section>
+      <section class="main">
+        <div class="container">
+          <h2>Main Content</h2>
+          <p>This is the main content of the blog.</p>
+        </div>
+      </section>
+      <section class="blogs">
+        <div class="container">
+          <h3>Recent Posts</h3>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact">
+        <div class="container">
+          <h2>Contact Us</h2>
+          <p>Contact us for more information.</p>
+        </div>
+      </section>
+      <section class="footer">
+        <footer>
+          <p>&copy; 2023 JD Blogs</p>
+        </footer>
+      </section>
+    </main>
+
+    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

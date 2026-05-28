@@ -1,0 +1,528 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Post - JD Blogs</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <i class="fas fa-pen"></i> JD Blogs
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse"
+            id="navbarNav"
+            style="justify-content: center"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="post.html">Posts</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Post Content -->
+    <section style="padding: 80px 0">
+      <div class="container">
+        <div class="row">
+          <!-- Main Post -->
+          <div class="col-lg-8">
+            <article class="post-content">
+              <!-- Post Title and Meta -->
+              <header class="mb-4">
+                <h1 class="mb-3">Getting Started with Web Development</h1>
+                <div class="post-meta">
+                  <div class="post-meta-item">
+                    <i class="fas fa-calendar"></i> May 28, 2024
+                  </div>
+                  <div class="post-meta-item">
+                    <i class="fas fa-user"></i> John Davis
+                  </div>
+                  <div class="post-meta-item">
+                    <i class="fas fa-folder"></i> Web Development
+                  </div>
+                  <div class="post-meta-item">
+                    <i class="fas fa-comments"></i> 5 Comments
+                  </div>
+                </div>
+              </header>
+
+              <!-- Featured Image -->
+              <img
+                src="assets/img/1.jpg"
+                alt="Post Featured Image"
+                class="post-image"
+              />
+
+              <!-- Post Body -->
+              <div class="post-body">
+                <p>
+                  Web development has become one of the most sought-after skills
+                  in today's digital world. Whether you're looking to start a
+                  new career or enhance your existing knowledge, getting started
+                  with web development is an exciting journey that opens up
+                  numerous opportunities.
+                </p>
+
+                <h3 class="mt-4 mb-3">Why Learn Web Development?</h3>
+                <p>
+                  The demand for web developers continues to grow exponentially.
+                  With the internet becoming an integral part of our daily
+                  lives, businesses of all sizes need skilled professionals to
+                  create and maintain their web presence. Learning web
+                  development provides you with the tools to build websites, web
+                  applications, and digital solutions that can impact millions
+                  of users.
+                </p>
+
+                <h3 class="mt-4 mb-3">Essential Skills You'll Need</h3>
+                <ul class="post-body">
+                  <li>
+                    <strong>HTML:</strong> The foundation of web development. It
+                    provides the structure and content of web pages.
+                  </li>
+                  <li>
+                    <strong>CSS:</strong> Used for styling and layout. CSS makes
+                    your websites visually appealing and responsive.
+                  </li>
+                  <li>
+                    <strong>JavaScript:</strong> The programming language of the
+                    web. It adds interactivity and dynamic functionality to your
+                    websites.
+                  </li>
+                  <li>
+                    <strong>Responsive Design:</strong> Essential for creating
+                    websites that work well on all devices.
+                  </li>
+                  <li>
+                    <strong>Version Control:</strong> Git is crucial for
+                    managing your code and collaborating with other developers.
+                  </li>
+                </ul>
+
+                <h3 class="mt-4 mb-3">Getting Started</h3>
+                <p>
+                  The first step is to learn the basics of HTML, CSS, and
+                  JavaScript. There are numerous free resources available
+                  online, including tutorials, courses, and documentation.
+                  Practice by building small projects to reinforce your
+                  learning. As you progress, you can explore advanced topics
+                  like frameworks, libraries, and backend development.
+                </p>
+
+                <h3 class="mt-4 mb-3">Building Your First Project</h3>
+                <p>
+                  Don't just learn passively—build projects! Start with simple
+                  projects like a personal portfolio website or a simple to-do
+                  application. Real-world projects will help you understand
+                  concepts better and give you experience that's valuable when
+                  applying for jobs.
+                </p>
+
+                <p>
+                  Remember, web development is a continuous learning journey.
+                  Stay updated with the latest technologies and best practices,
+                  and never stop experimenting with new ideas!
+                </p>
+
+                <!-- Like Button -->
+                <div class="mt-5 pt-3" style="border-top: 1px solid #eee">
+                  <button class="like-button" onclick="toggleLike(this)">
+                    <i class="far fa-heart"></i> Like this post
+                  </button>
+                  <span style="margin-left: 10px; color: #666"
+                    >23 people liked this</span
+                  >
+                </div>
+              </div>
+            </article>
+
+            <!-- Comments Section -->
+            <section class="comments-section mt-5">
+              <h3 class="comments-title">Comments (5)</h3>
+
+              <!-- Comment 1 -->
+              <div class="comment-item">
+                <div class="comment-author">
+                  John Doe
+                  <span class="comment-date">2 days ago</span>
+                </div>
+                <div class="comment-text">
+                  Great post! This really helped me understand the basics of web
+                  development. I'm excited to start learning!
+                </div>
+              </div>
+
+              <!-- Comment 2 -->
+              <div class="comment-item">
+                <div class="comment-author">
+                  Jane Smith
+                  <span class="comment-date">1 day ago</span>
+                </div>
+                <div class="comment-text">
+                  I found this very helpful. Looking forward to more content on
+                  advanced topics like React and Node.js!
+                </div>
+              </div>
+
+              <!-- Comment 3 -->
+              <div class="comment-item">
+                <div class="comment-author">
+                  Mike Johnson
+                  <span class="comment-date">12 hours ago</span>
+                </div>
+                <div class="comment-text">
+                  Thanks for the clear explanation. I appreciate the structured
+                  approach to learning web development.
+                </div>
+              </div>
+
+              <!-- Comment Form -->
+              <div
+                class="mt-5 pt-4"
+                style="border-top: 2px solid var(--primary-color)"
+              >
+                <h4 class="mb-4">Leave a Comment</h4>
+                <form id="commentForm">
+                  <div class="mb-3">
+                    <label for="name" class="form-label">Your Name *</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="name"
+                      name="name"
+                      placeholder="Your name"
+                      required
+                    />
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="email" class="form-label">Your Email *</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      name="email"
+                      placeholder="your@email.com"
+                      required
+                    />
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="comment" class="form-label">Comment *</label>
+                    <textarea
+                      class="form-control"
+                      id="comment"
+                      name="comment"
+                      rows="4"
+                      placeholder="Write your comment here..."
+                      required
+                    ></textarea>
+                  </div>
+
+                  <div class="form-check mb-3">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="notify"
+                      name="notify"
+                    />
+                    <label class="form-check-label" for="notify">
+                      Notify me when new comments are posted
+                    </label>
+                  </div>
+
+                  <button type="submit" class="btn cardbtn">
+                    <i class="fas fa-paper-plane"></i> Submit Comment
+                  </button>
+                </form>
+              </div>
+            </section>
+          </div>
+
+          <!-- Sidebar -->
+          <div class="col-lg-4">
+            <!-- About Author -->
+            <div class="row">
+              <div class="col-md-12 my-4">
+                <div
+                  class="card mb-4"
+                  style="
+                    border: none;
+                    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+                  "
+                >
+                  <div class="card-body">
+                    <h5
+                      class="card-title"
+                      style="color: var(--secondary-color); font-weight: bold"
+                    >
+                      About the Author
+                    </h5>
+                    <div style="text-align: center; margin-bottom: 20px">
+                      <div
+                        style="
+                          width: 80px;
+                          height: 80px;
+                          border-radius: 50%;
+                          background: linear-gradient(
+                            135deg,
+                            var(--primary-color),
+                            #34495e
+                          );
+                          margin: 0 auto 15px;
+                          display: flex;
+                          align-items: center;
+                          justify-content: center;
+                          font-size: 2.5rem;
+                          color: white;
+                        "
+                      >
+                        <i class="fas fa-user"></i>
+                      </div>
+                    </div>
+                    <h6
+                      style="color: var(--secondary-color); font-weight: bold"
+                    >
+                      John Davis
+                    </h6>
+                    <p
+                      style="
+                        font-size: 0.9rem;
+                        color: #999;
+                        margin-bottom: 15px;
+                      "
+                    >
+                      Web developer with 8+ years of experience. Passionate
+                      about teaching and sharing knowledge about web
+                      development.
+                    </p>
+                    <div
+                      style="display: flex; gap: 10px; justify-content: center"
+                    >
+                      <a
+                        href="#"
+                        style="color: var(--primary-color); font-size: 1.2rem"
+                        ><i class="fab fa-twitter"></i
+                      ></a>
+                      <a
+                        href="#"
+                        style="color: var(--primary-color); font-size: 1.2rem"
+                        ><i class="fab fa-linkedin"></i
+                      ></a>
+                      <a
+                        href="#"
+                        style="color: var(--primary-color); font-size: 1.2rem"
+                        ><i class="fab fa-github"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Related Posts -->
+              <div class="col-md-12">
+                <div
+                  class="card"
+                  style="
+                    border: none;
+                    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+                  "
+                >
+                  <div class="card-body">
+                    <h5
+                      class="card-title"
+                      style="color: var(--secondary-color); font-weight: bold"
+                    >
+                      Related Posts
+                    </h5>
+                    <ul style="list-style: none; padding: 0">
+                      <li
+                        style="
+                          padding-bottom: 15px;
+                          border-bottom: 1px solid #eee;
+                        "
+                      >
+                        <a
+                          href="post_det.html"
+                          style="
+                            color: var(--secondary-color);
+                            text-decoration: none;
+                            font-weight: 500;
+                          "
+                        >
+                          Advanced JavaScript Concepts
+                        </a>
+                        <p
+                          style="
+                            font-size: 0.85rem;
+                            color: #999;
+                            margin-top: 5px;
+                            margin-bottom: 0;
+                          "
+                        >
+                          May 25, 2024
+                        </p>
+                      </li>
+                      <li
+                        style="padding: 15px 0; border-bottom: 1px solid #eee"
+                      >
+                        <a
+                          href="post_det.html"
+                          style="
+                            color: var(--secondary-color);
+                            text-decoration: none;
+                            font-weight: 500;
+                          "
+                        >
+                          CSS Grid and Flexbox
+                        </a>
+                        <p
+                          style="
+                            font-size: 0.85rem;
+                            color: #999;
+                            margin-top: 5px;
+                            margin-bottom: 0;
+                          "
+                        >
+                          May 22, 2024
+                        </p>
+                      </li>
+                      <li style="padding-top: 15px">
+                        <a
+                          href="post_det.html"
+                          style="
+                            color: var(--secondary-color);
+                            text-decoration: none;
+                            font-weight: 500;
+                          "
+                        >
+                          Responsive Design Tips
+                        </a>
+                        <p
+                          style="
+                            font-size: 0.85rem;
+                            color: #999;
+                            margin-top: 5px;
+                            margin-bottom: 0;
+                          "
+                        >
+                          May 18, 2024
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+      <div class="container">
+        <h2>Subscribe to Our Blog</h2>
+        <p>
+          Get the latest articles and tutorials delivered to your inbox every
+          week
+        </p>
+        <button class="btn-cta" onclick="subscribeNewsletter()">
+          Subscribe Now
+        </button>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p>
+          &copy; 2024 JD Blogs. All rights reserved. |
+          <a href="contact.html">Contact Us</a> |
+          <a href="about.html">About Us</a>
+        </p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script>
+      // Like button toggle
+      function toggleLike(button) {
+        button.classList.toggle("liked");
+        if (button.classList.contains("liked")) {
+          button.innerHTML = '<i class="fas fa-heart"></i> You liked this post';
+        } else {
+          button.innerHTML = '<i class="far fa-heart"></i> Like this post';
+        }
+      }
+
+      // Comment form submission
+      document
+        .getElementById("commentForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          alert("Thank you for your comment! It will appear after moderation.");
+          this.reset();
+        });
+
+      function subscribeNewsletter() {
+        const email = prompt("Please enter your email address:");
+        if (email && email.includes("@")) {
+          alert(
+            "Thank you for subscribing! Check your email for confirmation.",
+          );
+          console.log("Subscribed email:", email);
+        } else if (email) {
+          alert("Please enter a valid email address.");
+        }
+      }
+
+      // Add scroll effect to navbar
+      window.addEventListener("scroll", function () {
+        const navbar = document.querySelector(".navbar");
+        if (window.scrollY > 10) {
+          navbar.style.boxShadow = "0 4px 8px rgba(0, 0, 0, 0.15)";
+        } else {
+          navbar.style.boxShadow = "0 2px 4px rgba(0, 0, 0, 0.1)";
+        }
+      });
+    </script>
+  </body>
+</html>

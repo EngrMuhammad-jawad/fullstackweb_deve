@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home - JD Blogs</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <i class="fas fa-pen"></i> JD Blogs
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse"
+            id="navbarNav"
+            style="justify-content: center"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="post.html">Posts</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Carousel Section -->
+    <section class="section1">
+      <div class="container">
+        <div
+          id="carouselExampleAutoplaying"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="assets/img/1.jpg"
+                class="d-block w-100"
+                alt="Featured Slide 1"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="assets/img/2.jpg"
+                class="d-block w-100"
+                alt="Featured Slide 2"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="assets/img/3.jpg"
+                class="d-block w-100"
+                alt="Featured Slide 3"
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Posts Section -->
+    <section class="section-card py-5">
+      <div class="container">
+        <h2 class="section-title mb-5">Featured Articles</h2>
+        <div class="row">
+          <div class="col-lg-4 mb-4">
+            <div class="card">
+              <img
+                src="assets/img/1.jpg"
+                class="card-img-top"
+                alt="Featured Post"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Getting Started with Web Development</h5>
+                <p class="card-text">
+                  Learn the fundamentals of web development and start your
+                  journey as a professional developer.
+                </p>
+                <small class="text-muted">
+                  <i class="fas fa-calendar"></i> May 28, 2024 |
+                  <i class="fas fa-user"></i> John Davis
+                </small>
+                <br />
+                <a href="post_det.html" class="btn cardbtn mt-3">Read More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mb-4">
+            <div class="card">
+              <img
+                src="assets/img/2.jpg"
+                class="card-img-top"
+                alt="Featured Post"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Design Trends in 2024</h5>
+                <p class="card-text">
+                  Explore the latest design trends that are shaping the web and
+                  digital products this year.
+                </p>
+                <small class="text-muted">
+                  <i class="fas fa-calendar"></i> May 25, 2024 |
+                  <i class="fas fa-user"></i> Sarah Williams
+                </small>
+                <br />
+                <a href="post_det.html" class="btn cardbtn mt-3">Read More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mb-4">
+            <div class="card">
+              <img
+                src="assets/img/3.jpg"
+                class="card-img-top"
+                alt="Featured Post"
+              />
+              <div class="card-body">
+                <h5 class="card-title">The Future of JavaScript</h5>
+                <p class="card-text">
+                  Discover what's next for JavaScript and the technologies that
+                  will dominate development.
+                </p>
+                <small class="text-muted">
+                  <i class="fas fa-calendar"></i> May 22, 2024 |
+                  <i class="fas fa-user"></i> Mike Chen
+                </small>
+                <br />
+                <a href="post_det.html" class="btn cardbtn mt-3">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Latest Posts Section -->
+    <section style="padding: 80px 0; background-color: var(--light-bg)">
+      <div class="container">
+        <h2 class="section-title mb-5">Latest Posts</h2>
+        <div class="row">
+          <div class="col-md-6 mb-4">
+            <div class="card">
+              <img src="assets/img/1.jpg" class="card-img-top" alt="Post" />
+              <div class="card-body">
+                <h5 class="card-title">Best Practices for Responsive Design</h5>
+                <p class="card-text">
+                  Master the techniques to create beautiful responsive websites
+                  that work on all devices.
+                </p>
+                <small class="text-muted">
+                  <i class="fas fa-folder"></i> Web Design |
+                  <i class="fas fa-comments"></i> 12 comments
+                </small>
+                <br />
+                <a href="post_det.html" class="btn cardbtn mt-3">Read More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-4">
+            <div class="card">
+              <img src="assets/img/2.jpg" class="card-img-top" alt="Post" />
+              <div class="card-body">
+                <h5 class="card-title">Understanding CSS Grid and Flexbox</h5>
+                <p class="card-text">
+                  Deep dive into modern CSS layout techniques that every
+                  developer should know.
+                </p>
+                <small class="text-muted">
+                  <i class="fas fa-folder"></i> CSS |
+                  <i class="fas fa-comments"></i> 8 comments
+                </small>
+                <br />
+                <a href="post_det.html" class="btn cardbtn mt-3">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+      <div class="container">
+        <h2>Stay Updated with Our Blog</h2>
+        <p>
+          Subscribe to receive the latest articles, tutorials, and insights
+          delivered to your inbox
+        </p>
+        <button class="btn-cta" onclick="subscribeNewsletter()">
+          Subscribe Now
+        </button>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p>
+          &copy; 2024 JD Blogs. All rights reserved. |
+          <a href="contact.html">Contact Us</a> |
+          <a href="about.html">About Us</a>
+        </p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script>
+      function subscribeNewsletter() {
+        const email = prompt("Please enter your email address:");
+        if (email && email.includes("@")) {
+          alert(
+            "Thank you for subscribing! Check your email for confirmation.",
+          );
+          console.log("Subscribed email:", email);
+        } else if (email) {
+          alert("Please enter a valid email address.");
+        }
+      }
+
+      // Add scroll effect to navbar
+      window.addEventListener("scroll", function () {
+        const navbar = document.querySelector(".navbar");
+        if (window.scrollY > 10) {
+          navbar.style.boxShadow = "0 4px 8px rgba(0, 0, 0, 0.15)";
+        } else {
+          navbar.style.boxShadow = "0 2px 4px rgba(0, 0, 0, 0.1)";
+        }
+      });
+    </script>
+  </body>
+</html>

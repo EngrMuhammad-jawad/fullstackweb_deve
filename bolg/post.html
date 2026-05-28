@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Posts - JD Blogs</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <i class="fas fa-pen"></i> JD Blogs
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse"
+            id="navbarNav"
+            style="justify-content: center"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="post.html">Posts</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="container">
+        <h1>Our Blog Posts</h1>
+        <p>Explore our latest articles, tutorials, and insights</p>
+      </div>
+    </section>
+
+    <!-- Posts Grid -->
+    <section style="padding: 80px 0">
+      <div class="container">
+        <!-- Search and Filter -->
+        <div class="row mb-5">
+          <div class="col-lg-8">
+            <div class="input-group">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Search posts..."
+                id="searchInput"
+              />
+              <button
+                class="btn"
+                style="background-color: var(--primary-color); color: white"
+                type="button"
+              >
+                <i class="fas fa-search"></i>
+              </button>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <select class="form-control" id="categoryFilter">
+              <option value="">All Categories</option>
+              <option value="web-design">Web Design</option>
+              <option value="web-dev">Web Development</option>
+              <option value="css">CSS</option>
+              <option value="javascript">JavaScript</option>
+              <option value="tutorials">Tutorials</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Posts Grid -->
+        <div class="row" id="postsGrid">
+          <!-- Post 1 -->
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card">
+              <img src="assets/img/1.jpg" class="card-img-top" alt="Post" />
+              <div class="card-body">
+                <div class="mb-2">
+                  <span
+                    class="badge"
+                    style="background-color: var(--primary-color)"
+                    >Web Design</span
+                  >
+                </div>
+                <h5 class="card-title">Getting Started with Web Design</h5>
+                <p class="card-text">
+                  Learn the basics of web design and create stunning websites
+                  that engage users.
+                </p>
+                <small class="text-muted">
+                  <i class="fas fa-calendar"></i> May 28, 2024 |
+                  <i class="fas fa-user"></i> John Davis
+                </small>
+                <br />
+                <a href="post_det.html" class="btn cardbtn mt-3">Read More</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Post 2 -->
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card">
+              <img src="assets/img/2.jpg" class="card-img-top" alt="Post" />
+              <div class="card-body">
+                <div class="mb-2">
+                  <span class="badge" style="background-color: #3498db"
+                    >Web Development</span
+                  >
+                </div>
+                <h5 class="card-title">Advanced JavaScript Techniques</h5>
+                <p class="card-text">
+                  Master advanced JavaScript concepts that every developer
+                  should know.
+                </p>
+                <small class="text-muted">
+                  <i class="fas fa-calendar"></i> May 25, 2024 |
+                  <i class="fas fa-user"></i> Mike Chen
+                </small>
+                <br />
+                <a href="post_det.html" class="btn cardbtn mt-3">Read More</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Post 3 -->
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card">
+              <img src="assets/img/3.jpg" class="card-img-top" alt="Post" />
+              <div class="card-body">
+                <div class="mb-2">
+                  <span class="badge" style="background-color: #e74c3c"
+                    >CSS</span
+                  >
+                </div>
+                <h5 class="card-title">CSS Grid and Flexbox Guide</h5>
+                <p class="card-text">
+                  A comprehensive guide to modern CSS layout techniques for
+                  responsive design.
+                </p>
+                <small class="text-muted">
+                  <i class="fas fa-calendar"></i> May 22, 2024 |
+                  <i class="fas fa-user"></i> Sarah Williams
+                </small>
+                <br />
+                <a href="post_det.html" class="btn cardbtn mt-3">Read More</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Post 4 -->
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card">
+              <img src="assets/img/1.jpg" class="card-img-top" alt="Post" />
+              <div class="card-body">
+                <div class="mb-2">
+                  <span
+                    class="badge"
+                    style="background-color: var(--primary-color)"
+                    >Tutorials</span
+                  >
+                </div>
+                <h5 class="card-title">Build Your First Website</h5>
+                <p class="card-text">
+                  A step-by-step tutorial for beginners to create their first
+                  website from scratch.
+                </p>
+                <small class="text-muted">
+                  <i class="fas fa-calendar"></i> May 20, 2024 |
+                  <i class="fas fa-user"></i> John Davis
+                </small>
+                <br />
+                <a href="post_det.html" class="btn cardbtn mt-3">Read More</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Post 5 -->
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card">
+              <img src="assets/img/2.jpg" class="card-img-top" alt="Post" />
+              <div class="card-body">
+                <div class="mb-2">
+                  <span class="badge" style="background-color: #3498db"
+                    >Web Development</span
+                  >
+                </div>
+                <h5 class="card-title">React Hooks Explained</h5>
+                <p class="card-text">
+                  Deep dive into React Hooks and how to use them effectively in
+                  your projects.
+                </p>
+                <small class="text-muted">
+                  <i class="fas fa-calendar"></i> May 18, 2024 |
+                  <i class="fas fa-user"></i> Mike Chen
+                </small>
+                <br />
+                <a href="post_det.html" class="btn cardbtn mt-3">Read More</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Post 6 -->
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card">
+              <img src="assets/img/3.jpg" class="card-img-top" alt="Post" />
+              <div class="card-body">
+                <div class="mb-2">
+                  <span class="badge" style="background-color: #e74c3c"
+                    >CSS</span
+                  >
+                </div>
+                <h5 class="card-title">Responsive Design Best Practices</h5>
+                <p class="card-text">
+                  Learn how to design responsive layouts that work on all screen
+                  sizes.
+                </p>
+                <small class="text-muted">
+                  <i class="fas fa-calendar"></i> May 15, 2024 |
+                  <i class="fas fa-user"></i> Sarah Williams
+                </small>
+                <br />
+                <a href="post_det.html" class="btn cardbtn mt-3">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Load More Button -->
+        <div class="text-center mt-5">
+          <button class="btn cardbtn btn-lg">
+            <i class="fas fa-redo"></i> Load More Posts
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+      <div class="container">
+        <h2>Want to Stay Updated?</h2>
+        <p>Subscribe to our newsletter for the latest posts and updates</p>
+        <button class="btn-cta" onclick="subscribeNewsletter()">
+          Subscribe Now
+        </button>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p>
+          &copy; 2024 JD Blogs. All rights reserved. |
+          <a href="contact.html">Contact Us</a> |
+          <a href="about.html">About Us</a>
+        </p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script>
+      function subscribeNewsletter() {
+        const email = prompt("Please enter your email address:");
+        if (email && email.includes("@")) {
+          alert(
+            "Thank you for subscribing! Check your email for confirmation.",
+          );
+          console.log("Subscribed email:", email);
+        } else if (email) {
+          alert("Please enter a valid email address.");
+        }
+      }
+
+      // Search functionality
+      document
+        .getElementById("searchInput")
+        .addEventListener("keyup", function (e) {
+          const searchTerm = e.target.value.toLowerCase();
+          const posts = document.querySelectorAll('[class*="col-"]');
+          posts.forEach((post) => {
+            const title = post.querySelector(".card-title");
+            if (title && title.textContent.toLowerCase().includes(searchTerm)) {
+              post.style.display = "block";
+            } else {
+              post.style.display = "none";
+            }
+          });
+        });
+
+      // Add scroll effect to navbar
+      window.addEventListener("scroll", function () {
+        const navbar = document.querySelector(".navbar");
+        if (window.scrollY > 10) {
+          navbar.style.boxShadow = "0 4px 8px rgba(0, 0, 0, 0.15)";
+        } else {
+          navbar.style.boxShadow = "0 2px 4px rgba(0, 0, 0, 0.1)";
+        }
+      });
+    </script>
+  </body>
+</html>
